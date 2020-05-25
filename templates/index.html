@@ -29,7 +29,7 @@
     <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
-      <a href="{{ url_for('index.html')}}" class="logo mr-auto"><img src="{{url_for('static', filename='img/jio logo.png')}}" alt="" class="img-fluid"></a>
+    <img src="{{url_for('static', filename='img/jio logo.png')}}" alt="" class="img-fluid"></a>
     </div>
   </header>
   <!-- End Header -->
@@ -37,12 +37,12 @@
   <!-- ======= Main Section ======= -->
 
   <main id="main">
-      
+
   <!-- ======= Filter Section ======= -->
     <section id="filter" class="filter">
         <div class="container" data-aos="fade-up">
                 <div class="row">
-                    <form class="form-inline new" action="">
+                    <form class="form-inline new" action="/">
                         <label for="price-segment" class="mr-md-2">Price Segment:</label>
                         <input type="text" name="price-segment" class="form-control mr-md-2" placeholder="Price segment" list="price-segment" required>
                             <datalist id="price-segment">
@@ -66,12 +66,12 @@
     </section>
   <!-- ======= Remix and Add Product Section ======= -->
 
-    
+
     <section id="remix" class="remix">
         <div class="row">
             <div class="column" data-aos="fade-up">
                 <div class="container" >
-                    <form action="" method="post" role="form" class="addproduct new">
+                    <form action="/" method="post" role="form" class="addproduct new">
                         <div class="form-group col-lg-8 mb-2">
                             <label for="Product" style="padding-right: 18px;">Product:</label>
                             <input type="text" name="Product" placeholder="Name of the Product" list="Product" required>
@@ -83,7 +83,7 @@
                             <div class="validate"></div>
                         </div>
                         <div class="form-group col-lg-8 mb-2">
-                        
+
                             <div class="input-group-append">
                                 <label for="price-drop" style="padding:2px 4px 4px 0px;" >Price Drop:</label>
                                 <input type="number" name="Quantity" placeholder="Price drop in %" id="price-drop" required=>
@@ -112,15 +112,15 @@
                                 <label class="form-control" for="margins" style="height: 30px;"><strong>Margins</strong></label>
                             </div>
                         </div>
-                    </form>       
-                </div>        
-            </div> 
+                    </form>
+                </div>
+            </div>
             <div class="column" data-aos="fade-up">
                 <div class="container">
                     <div class="form new">
                         <div class="section-title">
                             <h5>Add/Edit a new Product</h5>
-                        </div>  
+                        </div>
                         <div class="row">
                             <div class="column">
                                 <div class="col-lg-10 mt-5 mt-lg-0 d-flex align-items-stretch">
@@ -131,7 +131,7 @@
                                                 <th>Quantity</th>
                                             </tr>
                                         </thead>
-                                        <tbody> 
+                                        <tbody>
 
                                         </tbody>
                                     </table>
@@ -152,7 +152,7 @@
                                             <div class="validate"></div>
                                         </div>
                                         <div class="form-group col-md-6">
-                                        
+
                                             <label for="Quantity">Quantity:</label>
                                             <input type="number" name="Quantity" placeholder="Quantity" min=1 id="Quantity" required >
                                             <div class="validate"></div>
@@ -204,7 +204,7 @@
                     </tr>
                 </table>
             </div>
-          
+
 
             <div class="column1 new">
                 <h5>Measure</h5>
@@ -227,8 +227,8 @@
                     </tr>
                 </table>
             </div>
-         
-            
+
+
             <div class="column1 new">
                 <h5>Stacked Bar Graph</h5>
             </div>
@@ -238,7 +238,7 @@
 
 
     <!-- End main -->
-    
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container footer-bottom clearfix">
@@ -250,7 +250,7 @@
 
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
 
-    
+
   <!-- Vendor JS Files -->
   <script src="{{ url_for('static',filename='vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{ url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
